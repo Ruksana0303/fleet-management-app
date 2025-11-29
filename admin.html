@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin DAshboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <select id="filterCategory">
+            <option value="All">Catergory: All</option>
+            <option value="Auto">Auto</option>
+            <option value="Car">Car</option>
+            <option value="Truck">Truck</option>
+            <option value="Bus">Bus</option>
+        </select>
+        <select id="filterAvailability">
+            <option value="All">Availabilty: All</option>
+            <option value="Available">Available</option>
+            <option value="Unavailable">Unavailable</option>
+        </select>
+        <button id="clearFilter">Clear Filter</button>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+        <h3>Add Fleet</h3>
+        <input type="text" id="regNo" placeholder="Reg No of Vehicle">
+        <select id="category">
+            <option value="">Select Catergory</option>
+            <option value="Auto">Auto</option>
+            <option value="Car">Car</option>
+            <option value="Truck">Truck</option>
+            <option value="Bus">Bus</option>
+        </select>
+        <input type="text" id="driverName" placeholder="Driver Name">
+        <select id="Availabilty">
+            <option value="Available">Available</option>
+            <option value="Unavailable">Unavailable</option>
+
+        </select>
+        <button id="addFleet">Add Fleet</button>
+    </aside>
+    <main id="fleetContainer"></main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
