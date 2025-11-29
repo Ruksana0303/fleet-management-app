@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+.navbar{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #222;
+}
+.navbar select, .navbar button{
+    padding: 8px;
+}
+.container{
+    display: flex;
+}
+.sidebar input{
+    width:74%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.sidebar select, .sidebar button{
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+}
+#fleetContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.card{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);;
+
+}
+.card img{
+    width: 80%;
+}
+.card button{
+    margin-top: 5px;
+    width: 80%;
+    padding: 8px;
+}
